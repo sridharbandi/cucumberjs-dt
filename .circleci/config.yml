@@ -12,7 +12,11 @@ jobs:
       - run:
           name: Run Unit Tests
           command: |
-            npm install
+            npm test
+      - run:
+          name: Generate report
+          command: |
+            npm run report      
       - store_artifacts:
           path: reports
 workflows:
