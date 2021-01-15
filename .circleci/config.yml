@@ -18,7 +18,7 @@ jobs:
           command: |
             npm run report      
       - store_artifacts:
-          path: reports
+          path: report
 workflows:
   build_test:
     jobs:
