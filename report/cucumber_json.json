@@ -1,0 +1,171 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "filtering-books;filter-the-book-from-book-store",
+        "keyword": "Scenario Outline",
+        "line": 3,
+        "name": "Filter the book from book store",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "title",
+                      "author"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "The Devil",
+                      "Erik Larson"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "The Lion",
+                      "C.S Lewis"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "The Beast",
+                      "Erik Larson"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I have the following books in the store",
+            "match": {
+              "location": "features/support/step_definitions/booksteps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I filter books by author 'Erik Larson'",
+            "match": {
+              "location": "features/support/step_definitions/booksteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I find 2 books",
+            "match": {
+              "location": "features/support/step_definitions/booksteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "filtering-books;filter-the-book-from-book-store",
+        "keyword": "Scenario Outline",
+        "line": 3,
+        "name": "Filter the book from book store",
+        "steps": [
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "title",
+                      "author"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "The Devil",
+                      "Erik Larson"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "The Lion",
+                      "C.S Lewis"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "The Beast",
+                      "Erik Larson"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "Given ",
+            "line": 4,
+            "name": "I have the following books in the store",
+            "match": {
+              "location": "features/support/step_definitions/booksteps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "I filter books by author 'C.S Lewis'",
+            "match": {
+              "location": "features/support/step_definitions/booksteps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I find 1 books",
+            "match": {
+              "location": "features/support/step_definitions/booksteps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "filtering-books",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Filtering books",
+    "tags": [],
+    "uri": "features/books.feature"
+  }
+]
